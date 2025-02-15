@@ -3,7 +3,6 @@
 import Image from "next/image";
 import styles from "./BannerSection.module.css"
 
-
 export function BannerSection() {
   const phoneNumber = '+5541985011909'; 
   const handleClickMakeBudget = () => {

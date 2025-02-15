@@ -12,7 +12,6 @@ export default function Header() {
     window.open(whatsappLink, '_blank'); 
   }
 
-
   return (
       <header className={styles.container}> 
         <main className={styles.main}>   

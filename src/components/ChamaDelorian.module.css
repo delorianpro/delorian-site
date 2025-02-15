@@ -20,7 +20,6 @@
   z-index: 999;
   position: relative;
 }
-
 @media (max-width: 1380px){
   .motoChamaDelorianContainer{
     height: 55vw;
@@ -31,16 +30,12 @@
     right: 5rem; 
   }
 }
-
 @media (max-width: 1380px){
-
   .motoImg{
     width: 60%; 
     padding-bottom: 6rem;
-  
   }
 }
-
 @media (max-width: 1001px){
   .motoChamaDelorianContainer{
     height: 65vw;
@@ -56,7 +51,6 @@
     right: 3rem; 
   }
 }
-
 @media (max-width: 900px){
   .motoChamaDelorianContainer{
     height: 120vw;
@@ -95,10 +89,3 @@
     right: 0;
   }
 }
-
-
-
-
-
-
-

@@ -52,10 +52,7 @@
  .niceLogo, .rossiLogo{
   justify-self: flex-end;
 }
-
-/*Responsivo*/
-
- @media (max-width: 1400px){
+@media (max-width: 1400px){
   .backgroundImage{
     height: 90%;
   }
@@ -66,7 +63,6 @@
     font-size: 50px;
   }
 }
-
 @media (max-width: 1200px){
   .titleContainer{
     padding-top: 8rem;
@@ -94,7 +90,6 @@
   .titleContainer{
     padding-top: 5rem;
     max-width: 80%;
-
   }
   .title{
     font-size: 30px;
@@ -118,5 +113,3 @@
     width: 80%;
   }
 } 
-
-

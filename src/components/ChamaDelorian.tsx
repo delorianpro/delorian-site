@@ -1,7 +1,6 @@
 'use client'
 
 import styles from "./ChamaDelorian.module.css";
-
 import Image from "next/image";
 
 export function ChamaDelorian() {
@@ -15,7 +14,6 @@ export function ChamaDelorian() {
           width={300}
           height={126}
           />
-          
         <Image 
           src={"/assets/moto.png"} 
           className={styles.motoImg}

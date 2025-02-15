@@ -99,7 +99,7 @@
     max-width: 380px;
     height: auto;
   }
- }
+}
  @media (max-width: 600px) {
   .titleDelorianSolucoes{ 
     gap: 0.5rem;
@@ -128,7 +128,7 @@
   .imageContainer{
   height: 100px;
   }
- }
+}
  @media (max-width: 500px) {
   .problemSolutionContainer{
     justify-content: center;
@@ -148,7 +148,7 @@
   .imageContainer{
     margin-bottom: 1rem;
   }
- }
+}
  @media (max-width: 300px) {
   .problemSolutionContainer{
     justify-content: center;
@@ -185,4 +185,4 @@
     width: 100px;
     margin-top: 2rem;   
   } 
- }
+}
