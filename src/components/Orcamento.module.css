@@ -1,0 +1,138 @@
+.orcamentoContainer{
+    max-width: 1605px;
+    width: 78%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    align-items: center;
+    justify-items: flex-start;
+    padding:0 3rem;
+}
+.imagemRaioTranslucido{
+  max-width: 100%;
+  width: auto;
+  height: 600px;
+}
+
+.blocTextBotao{ 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+.titulo{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: black;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+}
+.contentOrcamento{
+  font-family: 'Roboto', monospace;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  max-width: 48ch;
+}
+.botaoFaleConosco{
+  font-size: 22px;
+  padding: 15px 40px;
+  border-radius: 8px;
+  width: 300px;
+  height: 70px;
+  align-self: flex-end;
+  margin-top: -2rem;
+&:hover {
+    cursor: pointer;
+    background-color: #000;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1630px){
+  .botaoFaleConosco{
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 1300px){
+  .imagemRaioTranslucido{
+    max-width: 90%;
+    width: auto;
+    height: 500px;
+  }
+  .blocTextBotao{ 
+    gap: 2px;
+    margin-top: 100px;
+  }
+  .titulo{
+
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 1rem;
+  }
+  .contentOrcamento{
+  
+    font-size: 25px;
+    line-height: 36px;
+  }
+  .botaoFaleConosco{
+    font-size: 18px;
+    width: 250px;
+    height: 60px;
+    align-self: flex-end;
+    
+  }
+}
+
+@media (max-width: 900px){
+  .orcamentoContainer{
+    padding: 0 1rem;
+  }
+  .imagemRaioTranslucido{
+    max-width: 90%;
+    width: auto;
+    height: 400px;
+  }
+}
+
+@media (max-width: 700px){
+  .orcamentoContainer{
+    padding: 0px;
+    margin-top: -4rem;
+  }
+  .imagemRaioTranslucido{
+    height: 190px;
+    margin-top: 5rem;
+  }
+  .titulo{
+    font-size: 20px;
+    line-height: 21px;
+    margin-bottom: 0.4rem;
+  }
+  .contentOrcamento{
+    font-size: 11px;
+    line-height: 19px;
+    font-weight: 400;
+  }
+  .botaoFaleConosco{
+    font-size: 10px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 45px;
+    margin-top: 8px;
+  }
+}

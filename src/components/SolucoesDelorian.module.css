@@ -1,0 +1,188 @@
+.delorianSolucoesContainer{
+  max-width: 1605px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+.titleDelorianSolucoes{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-top: 40px;
+}
+.raioAzul {
+  height: 5.5rem;
+  width: auto;
+}
+.delorianResolve{
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 5%;
+  color: #010549;
+  font-family: 'Poppins', sans-serif;
+}
+.problemSolutionContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 3.33%;
+  grid-auto-flow: dense;
+  padding-bottom: 100px;
+  justify-items: center;
+}
+.solucoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem;
+  background: white;
+  max-width: 500px;
+  height: 480px;
+  border-radius: 8px;
+  border: solid 1px rgba(0, 0, 0, 0.25);  
+}
+.titleSolucoes {
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  color: #000064;
+  line-height: 107%;
+  letter-spacing: 1.5%;
+  font-weight: 600;
+  text-align: start;
+}
+.resumeSolucoes {
+  font-size: 22px;
+  font-family: 'Roboto', monospace;
+  color: #000000;
+  line-height: 127%;
+  letter-spacing: 1.8%;
+  font-weight: 400;
+}
+.imageContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .titleDelorianSolucoes{ 
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+  .delorianResolve{
+    font-size: 2.8rem;
+  }
+  .raioAzul {
+    height: 5.35rem;
+  }
+  .problemSolutionContainer{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  .titleSolucoes {
+    font-size: 22px;
+  }
+  .resumeSolucoes {
+    font-size: 18px;
+  }
+  .imageContainer{
+    width: 250px;
+    margin: 0 auto;
+  }
+  .solucoes{
+    gap: 1rem;
+    padding: 2.5rem;
+    max-width: 380px;
+    height: auto;
+  }
+ }
+ @media (max-width: 600px) {
+  .titleDelorianSolucoes{ 
+    gap: 0.5rem;
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+  }
+  .raioAzul {
+    height: 3rem;
+  }
+  .delorianResolve{
+    font-size: 1.5rem;
+  }
+  .titleSolucoes {
+    font-size: 18px;
+  }
+  .resumeSolucoes {
+    font-size: 14px;
+  }
+  .solucoes{
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 100%;
+    height: 320px;
+  }
+  .imageContainer{
+  height: 100px;
+  }
+ }
+ @media (max-width: 500px) {
+  .problemSolutionContainer{
+    justify-content: center;
+  }
+  .delorianSolucoesContainer{
+    padding: 0 2rem;
+  }
+  .titleDelorianSolucoes{ 
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    gap: 0.5rem;
+  }
+  .raioAzul {
+    height: 3rem;
+  }
+  .imageContainer{
+    margin-bottom: 1rem;
+  }
+ }
+ @media (max-width: 300px) {
+  .problemSolutionContainer{
+    justify-content: center;
+  }
+  .delorianSolucoesContainer{
+    padding: 0 1rem;
+  }
+  .titleDelorianSolucoes{ 
+    gap: 0.2rem;
+    margin-top: 16px;
+    padding-top: 4px;
+    margin-bottom: 20px;
+  }
+  .raioAzul {
+    height: 1.8rem;
+  }
+  .delorianResolve{
+    font-size: 1rem;
+  }
+  .titleSolucoes {
+    font-size: 11px;
+  }
+  .resumeSolucoes {
+    font-size: 9px;
+    padding-bottom: 2rem;
+  }
+  .solucoes{
+    gap: 0.5rem;
+    padding: 1.2rem;
+    width: 200px;
+    height: 170px;
+  }
+  .imageContainer{
+    width: 100px;
+    margin-top: 2rem;   
+  } 
+ }

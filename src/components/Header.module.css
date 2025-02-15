@@ -1,0 +1,158 @@
+.container {
+  background-color: white;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto', 'monospace';
+  max-width: 1605px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  gap: 100px;
+}
+.logo {
+  width: 286px;
+  height: 60px;
+  display: block;
+  margin-top: 1.2rem;
+  &:hover {
+      cursor: pointer;
+    }
+}
+.nav {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-inicio, .nav-delorianResolve { 
+  font-weight: 500;
+  font-size: 1.625rem;
+  width: auto;
+  height: 3rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+   &:hover {
+    cursor: pointer;
+    border-bottom: 3px solid  #0311FE;
+   }
+  }
+  .nav-delorianResolve{
+    text-align: center;
+  }
+.button{
+  width:15rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.625rem;
+  font-family: var(--font-roboto);
+  background-color: #0311FE;
+  border-style: none;
+  color: white;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  &:hover {
+    cursor: pointer;
+    background-color: black;
+  }
+}
+
+@media (max-width: 1500px){
+  .nav{
+    gap: 0rem;
+  }
+  .main{
+    gap: 0.9rem;
+  }
+  .nav-inicio, .nav-delorianResolve {
+      font-size: 1.4rem;
+      text-wrap: nowrap;
+    }
+  .button {
+      font-size: 1.2rem;
+      width:14rem;
+      height: 3.5rem;
+    }
+  }
+  .logo {
+    width: 270px;
+    height:auto;
+  }
+
+  @media (max-width: 1200px){
+    .main {
+      flex-wrap: wrap;
+      padding-top: 4rem;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+    }
+    .logo {
+      margin: 0 auto;
+    }
+    .nav {
+      margin-bottom: 1rem;
+      justify-content: center;
+      gap: 2%;
+    }
+
+    .nav-inicio, .nav-delorianResolve {
+      background: #E6F0F2;
+      padding: 30px 18px;
+      border-radius: 8px;
+      text-align: center;
+      font-size:  1.2rem;
+  
+      &:hover {
+        background-color: black;
+        color: white;
+        border: none;
+      }
+    }
+    .button {
+      font-size: 1.2rem;
+      width: 14rem;
+      height: 4rem;
+  }
+}
+
+
+@media (max-width: 600px){
+  .main{
+    padding: 1.4rem 2rem;
+    gap: 2rem;
+  }
+  .nav{
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .nav-inicio, .nav-delorianResolve {
+      font-size: 0.78rem;
+      text-wrap: wrap;
+      text-align: center;
+      height: 3rem;
+      width: auto;
+      padding: 1.2rem 1rem;
+    }
+  .button {
+      font-size: 0.8rem;
+      padding: 1px 1rem;
+      width: 8rem;
+      height: 3rem;
+    }
+  }
+  .logo {
+    margin-top: 1.2rem;
+    width: 270px;
+    height:auto;
+  }
+
