@@ -16,6 +16,7 @@
   padding-left: 3rem;
   padding-right: 3rem;
   margin-bottom: 8rem;
+  margin-top: 8rem;
   &::before{
     content: " ";
     width: 80%;
@@ -52,6 +53,10 @@
  max-width: 150px;
 }
 @media (max-width: 1000px){
+  .footerContainer{
+    margin-top: 12rem;
+  }
+
   .whatsappImag, .facebookImag, .instagramImag{
     height: 30px;
     margin-right: 0px; 
@@ -72,7 +77,28 @@
     }
   }
 }
+
+@media (max-width: 800px){
+ 
+  .whatsappImag, .facebookImag, .instagramImag{
+    height: 20px;
+  }
+  .redesSociais{
+    max-width: 80px;
+   }
+   .footerContainer{
+    font-size: 10px;
+  }
+  .imageCopy{
+    height: 9px;
+  }
+}
+
+
 @media (max-width: 600px){
+  .footerContainer{
+    margin-top: 8rem;
+  }
   .whatsappImag, .facebookImag, .instagramImag{
     height: 15px;
   }
@@ -93,16 +119,16 @@
     gap: 0;
     &::before{
       width: 75%;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
   }
 }
 @media (max-width: 400px){
   .whatsappImag, .facebookImag, .instagramImag{
-    height: 10px;
+    height: 12px;
   }
   .redesSociais{
-    max-width: 25px;
+    max-width: 40px;
    }
 }
 

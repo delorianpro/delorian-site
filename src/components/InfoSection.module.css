@@ -5,34 +5,42 @@
   padding: 2rem 3rem;
   margin-top: 8rem;
   margin-bottom: 8%;
+  position: relative;
   max-width: 1605px;
+  }
+.blocosInfo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 4rem;
+    margin-left: -5rem;   
 }
 .delorianlogo{
-  width: 70%;
-  height: auto;
-  display: block;
-  margin-top: 0.4rem;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    &:hover {
+        cursor: pointer;
+      }
 }
-.blocosInfo{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto;
-  gap: 3rem;
- 
-}
- .delorianResolveTitle, .funcionamentoTitle, .faleConoscoContatosTitle {
+
+.delorianResolveTitle, .funcionamentoTitle, .faleConoscoContatosTitle{
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: black;
-    margin-bottom: 19px;
+    margin-bottom: 1rem;
+
 }
 .delorianResolveTitle{
+  
   &:hover {
       cursor: pointer;
     }
 }
-.text, .delorianSolu, .facebookText, .whatsappText, .instagramText{
+.delorianSolu, .text, .whatsappText, .facebookText, .instagramText{
   margin: 0;
   text-decoration: none;
   font-size: 22px;
@@ -42,67 +50,62 @@
   color: black;
   margin-bottom: 0.8rem;
 }
-.delorianSolu{
-  height: auto;
-  display: block;
-  margin-top: 1.2rem;
-  font-weight: 500;
-  &:hover {
-      cursor: pointer;
+.delorianResolve {
+  display: flex;
+  flex-direction: column;
+}
+  .delorianSolu{
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .whatsappText, .facebookText, .instagramText{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: 500;
+  }
+  .facebookImage, .instagramImage, .whatsappImage{
+    height: 37px;
+    width: 37px;
+    margin-top: 0;
+  }
+  @media (max-width: 1700px) {
+    .infoContainer{
+      display: block;
+    }
+    .delorianlogo {
+      max-width: 500px;
+      width: 30%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .blocosInfo{
+      max-width: max-content;
+      margin: 0 auto;
+      justify-items: center;
+      padding: 2rem 3rem;
     }
 }
-.facebookText, .whatsappText, .instagramText{
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-weight: 500;
-}
-.facebookImage, .whatsappImage, .instagramImage{
-  height: 37px;
-  width: 37px;
-  margin-top: 0;
-}
-@media (max-width: 1400px) {
+
+@media (max-width: 1700px) {
   .infoContainer{
-    max-width: 90%;
     margin-top: 4rem;
-    gap: 2rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px){
+  
   .infoContainer{
-    max-width: 90%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
-    align-items: center;
-    margin-top: 2rem;
+    display: block;
+  padding: 0.5rem;
+  margin-top: 4rem; 
   }
+
   .delorianlogo{
-    display: flex;
-    justify-self: center;
-    width: 300px;
-    height: auto;
-    margin-top: 0.2rem;   
-}
-  .text, .delorianSolu, .facebookText, .whatsappText, .instagramText{
-    font-size: 22px;
-    letter-spacing: 1.5%;
-    margin-bottom: 0.8rem;
-  }
-  .delorianSolu{
-    margin-top: 1.2rem;
-    font-weight: 500;
-    &:hover {
-        cursor: pointer;
-      }
-  }
-}
-@media (max-width: 1000px) {
-  .infoContainer{
-    max-width: 95%;
-    margin-top: 0rem;
-    padding-top: 0;
-    gap: 1rem;
+    max-width: 800px;
+    width: 50%;
+    margin-bottom: 2rem;
   }
   .blocosInfo{
     width: 95%;
@@ -111,142 +114,109 @@
     gap: 3rem;   
     justify-content: center ;
     }  
-  .text, .delorianSolu, .facebookText, .whatsappText, .instagramText{
-    font-size: 18px;
-    margin-bottom: 0.8rem;
-  }
-  .faleConosco {
-    margin-top: 0.5rem;
-    width: max-content;
-    grid-column: span 2; 
-    text-align: center;
-    justify-self: center;
-    max-width: max-content;
-  }
-  .faleConoscoContatosTitle{
-    margin-bottom: 0.8rem;
-        text-align: start;
-  }
-  .text{
-    line-height: 125%;
-    width: 16ch;
-    font-weight: 400;
-    font-size: 24px;
-  }
-  .funcionamentoTitle, .delorianResolveTitle{
-    font-size: 30px;
-    margin-bottom: 0.8rem;
-    line-height: 100%;
-    font-weight: 700;
-  }
   .delorianSolu{
-    font-size: 24px;
-    margin-bottom: 0.1rem;
-    line-height: 100%;
-    font-weight: 700;
-  }
-  .facebookText, .whatsappText, .instagramText{
-    font-size: 24px;
-    margin-bottom: 0.4rem;
-    line-height: 100%;
-    font-weight: 500;
-  }
-  .facebookImage, .whatsappImage, .instagramImage{
-    margin: 0;
-    max-width: max-content;
-    align-items: center;
-     gap: 0.1rem;
-      height: 35px;
-      width: 35px;
-      margin-top: 0;
-  }
-}
-@media (max-width: 800px) {
-  .text, .delorianSolu, .facebookText, .whatsappText, .instagramText{
-    font-size: 20px;
-    margin-bottom: 0.8rem;
-  }
-  .funcionamentoTitle, .delorianResolveTitle, .faleConoscoContatosTitle{
-    font-size: 25px;
-  }
-  .blocosInfo{
-    gap: 2.8rem;
-  }
-}
-@media (max-width: 700px) {
-  .infoContainer{
-    margin-top: -2rem;
-    padding: 0 2rem;
-  }
-  .delorianlogo{
-    width: 52%;
-  }
-  .text, .delorianSolu, .facebookText, .whatsappText, .instagramText{
-    font-size: 18px;
-    margin-bottom: 0.8rem;
-  }
-  .funcionamentoTitle, .delorianResolveTitle, .faleConoscoContatosTitle{
-    font-size: 22px;
-  }
-  .blocosInfo{
-    gap: 2.8rem;
-  }
-}
-@media (max-width: 500px) {
-  .infoContainer{
-    margin-top: -3rem;
-    padding: 0 1rem;
-  }
-  .text, .delorianSolu, .facebookText, .whatsappText, .instagramText{
-    font-size: 14px;
-    margin-bottom: 0.4rem;
-    margin-top: 0;
-  }
-  .delorianSoluFirstChild{
-    margin-top: 25px;
-  }
-  .delorianSolu{
-    margin-bottom: 0.8rem;
-  }
-  .funcionamentoTitle, .delorianResolveTitle, .faleConoscoContatosTitle{
-    font-size: 15px;
-  }
-  .blocosInfo{
-    gap: 2.8rem;
-    margin-top: -1rem;
-  }
-  .facebookImage, .whatsappImage, .instagramImage{
-      gap: 0.1rem;
-      height: 20px;
-      width: 20px;
-  }
-}
-@media (max-width: 360px) {
-  .infoContainer{
-    margin-top: -3rem;
-    padding: 0 0.5rem;
-  }
-  .text, .delorianSolu, .facebookText, .whatsappText, .instagramText{
-    font-size: 10px;
-    margin-bottom: 0.4rem;
-    margin-top: 0;
-  }
-  .delorianSoluFirstChild{
-    margin-top: 15px;
-  }
-  .delorianSolu{
-    margin-bottom: 0.3rem;
-  }
-  .funcionamentoTitle, .delorianResolveTitle, .faleConoscoContatosTitle{
-    font-size: 15px;
-  }
-  .blocosInfo{
-    gap: 2rem;
-    margin-top: 0.1rem;
-  }
-  .facebookImage, .whatsappImage, .instagramImage{
-    gap: 0.1rem;
-    height: 14px;
-    width: 14px;
-}
-}
+      width: 17ch;
+      padding-bottom: 2px;
+   }
+  .horarioFuncionamento{
+      width: min-content;
+    }
+      .text{
+        line-height: 125%;
+        width: 16ch;
+        font-weight: 400;
+      }
+      .delorianResolveTitle, .funcionamentoTitle, .faleConoscoContatosTitle{
+        font-size: 30px;
+        margin-bottom: 0.8rem;
+        /* padding-top: 30px; */
+        line-height: 100%;
+        font-weight: 700;
+      }
+
+      .delorianSolu, .text, .whatsappText, .facebookText, .instagramText{
+        font-size: 24px;
+        margin-bottom: 0.4rem;
+        line-height: 100%;
+        font-weight: 500;
+      }
+      .faleConosco{
+        margin-top: 0.5rem;
+        width: max-content;
+        grid-column: 1 / span 2; 
+        text-align: center;
+      }
+        .faleConoscoContatosTitle{
+            margin-bottom: 0.8rem;
+            text-align: start;
+        }
+        .whatsappText, .facebookText, .instagramText{
+          font-size: 24px;
+          margin-bottom: 0.8rem;
+        }
+        .whatsappText, .facebookText, .instagramText{
+          margin: 0;
+          max-width: max-content;
+          align-items: center;
+          gap: 0.1rem;
+        }
+        .facebookImage, .instagramImage, .whatsappImage{
+          height: 35px;
+          width: 35px;
+          margin-top: 0;
+        }
+      }
+      @media (max-width: 1700px) {
+        .infoContainer{
+          margin-top: 2rem;
+        }
+      }
+
+
+@media (max-width: 600px){
+        .infoContainer{
+          display: block;
+          padding: 0.5rem;
+          margin-top: 0rem;
+         
+        }
+
+ .delorianlogo{
+          max-width: 800px;
+          width: 50%;
+          margin-bottom: 1rem;
+        }
+ .blocosInfo{
+          width: 90%;
+          
+        
+          }
+      
+ .delorianResolveTitle, .funcionamentoTitle, .faleConoscoContatosTitle{
+              font-size: 15px;
+              margin-bottom: 0.8rem;
+              padding-top: 8px;
+              line-height: 100%;
+              font-weight: 700;
+            }
+            .delorianSolu, .text, .whatsappText, .facebookText, .instagramText{
+              font-size: 14px;
+              font-family: 'Roboto', monospace;
+              margin-bottom: 0.4rem;
+              line-height: 100%;
+              font-weight: 500;
+            }
+        
+            .facebookImage, .instagramImage, .whatsappImage{
+              height: 22px;
+              width: 22px;
+              margin-top: 0;
+            }
+      }
+  
+      @media (max-width: 400px) {
+        .infoContainer{
+          margin-top: -1rem;
+        }
+      }
+
