@@ -21,13 +21,13 @@ export default function Header() {
               alt={"Logo Delorian que é o próprio nome da empresa com letra estilizada"} 
               width={14584} 
               height={2926} 
-              priority
+              priority={true}
               className={styles.logo}
               />
           </Link>
           <nav className={styles.nav}>
             <Link href="/" className={styles['nav-inicio']}>Início</Link>
-            <Link href="/#delorianResolve" className={styles['nav-delorianResolve']}>Delorian resolve</Link>
+            <Link href="/#delorianResolveId" className={styles['nav-delorianResolve']}>Delorian resolve</Link>
             <button className={styles.button} onClick={handleClickTalkWithUs}  >Fale conosco</button>
           </nav>
         </main>  

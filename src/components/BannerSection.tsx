@@ -23,7 +23,7 @@ export function BannerSection() {
             alt={"raposa preta com a camisa da delorian"}
             width={2379} 
             height={2984} 
-            priority
+            priority={true}
             className={styles.mascote}
             />
           <Image 
@@ -31,7 +31,7 @@ export function BannerSection() {
             alt="Imagem de portão de grade eletrônico cinza e um motor com cremalheira representando o foco da delorian"
             width={904} 
             height={739} 
-            priority 
+            priority={true}
             className={styles.portao}
             />
         </div>    

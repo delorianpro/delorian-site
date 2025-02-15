@@ -27,14 +27,14 @@ export function InfoSection() {
       </Link>
       <div className={styles.blocosInfo}>
         <div className={`${styles.delorianResolve} ${styles.item2}`}>
-          <h3><Link href="#delorianResolve" className={styles.delorianResolveTitle}>Delorian resolve</Link></h3>
-          <Link href="#delorianResolve" className={`${styles.delorianSolu} ${styles.delorianSoluFirstChild}`}>Instalação de motor em portões</Link>
-          <Link href="#delorianResolve" className={styles.delorianSolu}>Motor não funcionando</Link>
-          <Link href="#delorianResolve" className={styles.delorianSolu}>Motor sem força</Link>
-          <Link href="#delorianResolve" className={styles.delorianSolu}>Motor indo só para um lado</Link>
-          <Link href="#delorianResolve" className={styles.delorianSolu}>Motor barulhento</Link>
-          <Link href="#delorianResolve" className={styles.delorianSolu}>Portão batendo</Link>
-          <Link href="#delorianResolve" className={styles.delorianSolu}>Cadastro de controles</Link>
+          <h3><Link href="#delorianResolveId" className={styles.delorianResolveTitle}>Delorian resolve</Link></h3>
+          <Link href="/#delorianResolveId" className={`${styles.delorianSolu} ${styles.delorianSoluFirstChild}`}>Instalação de motor em portões</Link>
+          <Link href="/#delorianResolveId" className={styles.delorianSolu}>Motor não funcionando</Link>
+          <Link href="/#delorianResolveId" className={styles.delorianSolu}>Motor sem força</Link>
+          <Link href="/#delorianResolveId" className={styles.delorianSolu}>Motor indo só para um lado</Link>
+          <Link href="/#delorianResolveId" className={styles.delorianSolu}>Motor barulhento</Link>
+          <Link href="/#delorianResolveId" className={styles.delorianSolu}>Portão batendo</Link>
+          <Link href="/#delorianResolveId" className={styles.delorianSolu}>Cadastro de controles</Link>
         </div>
         <div className={`${styles.horarioFuncionamento} ${styles.item3}`}>
           <h3 className={styles.funcionamentoTitle} >Horário de funcionamento</h3>

@@ -19,6 +19,7 @@ export function FloatingWhatsAppButton() {
         width={16667}
         height={16667}
         alt={"Botão do WhatsApp azul e branco"}
+        priority={true}
         />
     </div>
   )
