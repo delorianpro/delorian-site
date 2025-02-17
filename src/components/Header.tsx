@@ -19,7 +19,7 @@ export default function Header() {
             <Image 
               src="/assets/logoDelorian.png" 
               alt={"Logo Delorian que é o próprio nome da empresa com letra estilizada"} 
-              width={14584} 
+              width={1000} 
               height={2926} 
               priority={true}
               className={styles.logo}

@@ -51,48 +51,44 @@
   padding-bottom: 2rem;
 }
 @media (max-width: 1500px){
-  .curitibaRegiaoContainer{
-    margin-top: -8rem;
-  }
   .titulo{
     font-size: 30px;
-    padding: 50px 0 20px 60px;
     line-height: 45px;
   }
-  .informacao{
-    font-size: 18px;
-    padding-left: 60px;
-    line-height: 25px;
+}
+@media (max-width: 1400px){
+  .informacao, .titulo{
+    padding-left: 50px;
   }
   .buttonChamaDelorian{
-    width: 80%;
-    margin-left: 60px;
-    margin-bottom: 40px;
-    padding: 18px 1rem;
-    font-size: 18px;
+    margin-left: 50px;
   }
   .imagemMapa{
-    max-width: 100%;
-    width: 25rem;
-    padding-top: 1rem;
-    padding-right: 1rem;
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 1300px){
+  .titulo{
+    font-size: 28px;
+    line-height: 40px;
     padding-bottom: 1rem;
   }
-}
-@media (max-width: 1200px){
-  .imagemMapa{
-    padding-top: 3rem;
+  .informacao{
+    font-size: 20px;
+    line-height: 28px;
   }
+ 
 }
+
 @media (max-width: 1000px){
   .curitibaRegiaoContainer{
-    width: 90%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     padding: 1rem 2rem 5rem;
     height: max-content;
-    margin-top: -12rem;
+    margin-top: -22rem;
     margin-bottom: 4rem;
   }
   .blocoTexto{
@@ -136,30 +132,57 @@
     justify-self: center;
   }
 }
+@media (max-width: 900px){
+  .curitibaRegiaoContainer{
+    margin-top: -24rem;
+    width: 85%;
+  }
+}
+@media (max-width: 800px){
+  .curitibaRegiaoContainer{
+    margin-top: -18rem;
+    width: 90%;
+    padding: 1rem 4rem 4rem 4rem;
+  }
+  .imagemMapa{
+    width: 85%;
+    height: auto;
+    padding: 1rem;
+  }
+}
+@media (max-width: 700px){
+  .curitibaRegiaoContainer{
+    margin-top: -20rem;
+    width: 85%;
+  }
+}
 @media (max-width: 600px){
   .curitibaRegiaoContainer{
     width: 95%;
     padding: 1rem 2rem 2rem;
-    margin-top: -8rem;
+    margin-top: -20rem;
   }
+  .blocoTexto{
+    width: 90%;
+  }
+ 
   .titulo{
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 1rem;
-    margin-top: 0.1rem;
+    margin-top: 0.8rem;
     line-height: 1.3;
     text-align: center;
   }
   .informacao{
-
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 1.4rem;
-    max-width: 26ch; 
+   
   }
   .buttonChamaDelorian{
     padding: 1rem;
     font-size: 12px;
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 0 0 2rem 0;
   }
@@ -167,5 +190,16 @@
     width: 306px;
     height: auto;
     padding: 0.5rem;
+  }
+}
+@media (max-width: 500px){
+  .curitibaRegiaoContainer{
+    width: 95%;
+    padding: 1rem 2rem 2rem;
+    margin-top: -10rem;
+  }
+  .titulo{
+    font-size: 24px;
+   
   }
 }
