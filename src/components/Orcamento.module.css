@@ -1,13 +1,12 @@
 .orcamentoContainer{
-  max-width: 1605px;
-  width: 78%;
+  max-width: 1364px;
   margin: 0 auto;
   margin-bottom: 3rem;
   display: grid;
   grid-template-columns: 1.2fr 2fr;
   align-items: center;
   justify-items: flex-start;
-  padding:0 3rem;
+  padding:0 2rem;
 }
 .imagemRaioTranslucido{
   max-width: 100%;
@@ -21,28 +20,29 @@
   align-items: flex-start;
   margin-top: 100px;
 }
+
 .titulo{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
   color: black;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   align-self: flex-start;
 }
 .contentOrcamento{
   font-family: 'Roboto', monospace;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 40px;
   max-width: 48ch;
 }
 .botaoFaleConosco{
-  font-size: 22px;
+  font-size: 20px;
   padding: 15px 40px;
   border-radius: 8px;
   width: 300px;
-  height: 70px;
+  height: 68px;
   align-self: flex-end;
   margin-top: -2rem;
 &:hover {
@@ -50,6 +50,7 @@
     background-color: #000;
   }
 }
+
 @media(max-width: 1600px){
   .botaoFaleConosco {
     padding: 25px 40px;
@@ -57,39 +58,38 @@
     height: 70px;
     margin-top: 10px;
     margin-right: 2px;
-    align-self: flex-end;
   }
 }
-@media (max-width: 1000px) {
-  .orcamentoContainer{
-    max-width: 680px;
-    grid-template-columns: 1fr 2fr;
-    width: 95%;
-    margin-top: 8rem;
-    margin-bottom: 3rem;
-    gap: 10px;
-    padding:0 1rem;
+@media (max-width: 1200px) {
+  .titulo {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 0.7rem;
+  }
+  .contentOrcamento{
+    font-size: 20px;
+    line-height: 45px;
   }
   .blocTextBotao {
-    display: flex;
-    flex-direction: column;
     gap: 6px;
     margin-top: 0px;
   }
   .imagemRaioTranslucido {
-    max-width: 100%;
     height: 480px;
-    width: auto;
   }
- .titulo {
-    font-size: 46px;
-    line-height: 50px;
+}
+@media (max-width: 800px) {
+  .orcamentoContainer{
+    margin-bottom: 0;
+    margin-top: -1rem;
+  }
+  .titulo {
+    font-size: 30px;
+    line-height: 42px;
     margin-bottom: 0.7rem;
   }
   .contentOrcamento{
-   
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 22px;
     line-height: 45px;
   }
   .botaoFaleConosco {
@@ -99,38 +99,37 @@
     height: 70px;
     margin-top: 10px;
     margin-right: 2px;
-    align-self: flex-end;
   }
 }
 @media (max-width: 600px) {
   .orcamentoContainer{
     grid-template-columns: 1fr 2fr;
     width: 95%;
-    margin-bottom: 3rem;
-    margin-top: 4rem;
-    gap: 10px;
-    padding:0 1rem;  
+    margin-bottom: 2rem;
+    margin-top: -4rem;
+    gap: 2px;
+    padding:0  0.5rem 0 0;  
   }
   .blocTextBotao {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    margin-top: 0px;
+    margin-top: 4rem;
   }
   .imagemRaioTranslucido {
     max-width: 100%;
-    height: 190px;
+    height: 220px;
     width: auto;
   }
  .titulo {
-    font-size:20px;
-    line-height: 21px;
+    font-size: 22px;
+    line-height: 30px;
     margin-bottom: 0.4rem;
   }
   .contentOrcamento{
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 25px;
   }
   .botaoFaleConosco {
     font-size: 10px;

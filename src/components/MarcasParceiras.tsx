@@ -17,12 +17,12 @@ export function MarcasParceiras() {
             <h3 className={styles.title} >Trabalhamos com as principais marcas</h3>
           </div>
           <div className={styles.blocoMarcas}>
-            <Image src={"/assets/garen.png"} className={styles.garenLogo} alt={"logo da marca garen"} width={271} height={52}/>
-            <Image src={"/assets/intelbras.png"} className={styles.intelbrasLogo} alt={"logo da marca intelbras"} width={244} height={47} />
-            <Image src={"/assets/nice.png"} className={styles.niceLogo} alt={"logo da marca nice"}  width={194} height={68} />
-            <Image src={"/assets/peccinin.png"} className={styles.peccininLogo} alt={"logo da marca peccinin"}  width={277} height={96} />
-            <Image src={"/assets/ppa.png"} className={styles.ppaLogo} alt={"logo da marca ppa"}  width={137} height={70} />
-            <Image src={"/assets/rossi.png"} className={styles.rossiLogo} alt={"logo da marca rossi"}  width={208} height={45} />
+            <Image src={"/assets/garen.png"} className={styles.garenLogo} alt={"Imagem do logotipo da Garen, marca de motores para portões automáticos com a qual a Delorian trabalha"} width={271} height={52}/>
+            <Image src={"/assets/intelbras.png"} className={styles.intelbrasLogo} alt={"Imagem do logotipo da Intelbras, marca de motores para portões automáticos com a qual a Delorian trabalha"} width={244} height={47} />
+            <Image src={"/assets/nice.png"} className={styles.niceLogo} alt={"Imagem do logotipo da Nice, marca de motores para portões automáticos com a qual a Delorian trabalha"}  width={194} height={68} />
+            <Image src={"/assets/peccinin.png"} className={styles.peccininLogo} alt={"Imagem do logotipo da Peccinin, marca de motores para portões automáticos com a qual a Delorian trabalha"}  width={277} height={96} />
+            <Image src={"/assets/ppa.png"} className={styles.ppaLogo} alt={"Imagem do logotipo da PPA, marca de motores para portões automáticos com a qual a Delorian trabalha"}  width={137} height={70} />
+            <Image src={"/assets/rossi.png"} className={styles.rossiLogo} alt={"Imagem do logotipo da Rossi, marca de motores para portões automáticos com a qual a Delorian trabalha"}  width={208} height={45} />
           </div>
         </div>
     </div>

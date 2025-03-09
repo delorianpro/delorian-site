@@ -13,11 +13,11 @@ export function FloatingWhatsAppButton() {
   return(
     <div className={styles.buttonWhatsappContainer}>
       <Image 
-        src={"/assets/whatsappButton.png"} 
+        src={"/assets/whatsappButton1.png"} 
         onClick={handleRedirectWhatsapp} 
         className={styles.whatsappIconFixed}
-        width={16667}
-        height={16667}
+        width={100}
+        height={100}
         alt={"Botão do WhatsApp azul e branco"}
         priority={true}
         />

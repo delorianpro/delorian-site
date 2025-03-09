@@ -1,22 +1,22 @@
 .delorianSolucoesContainer{
-  max-width: 1605px;
+  max-width: 1364px;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 .titleDelorianSolucoes{
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-top: 60px;
+  gap: 0.5rem;
+  margin-top: 40px;
   margin-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .raioAzul {
-  height: 5.5rem;
+  height: 4.8rem;
   width: auto;
 }
 .delorianResolve{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: auto;
   letter-spacing: 5%;
@@ -25,35 +25,35 @@
 }
 .problemSolutionContainer{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 3.33%;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
   grid-auto-flow: dense;
-  padding-bottom: 100px;
+  padding-bottom: 1rem;
   justify-items: center;
 }
 .solucoes{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  padding: 3rem;
+  padding: 3rem 2rem;
   background: white;
   max-width: 500px;
   height: 480px;
   border-radius: 8px;
-  border: solid 1px rgba(0, 0, 0, 0.25);  
+  border: solid 1px rgba(0, 0, 0, 0.25); 
+  align-items: flex-start;
+  justify-items: center;
 }
 .titleSolucoes {
-  font-size: 28px;
+  font-size: 25px;
   font-family: 'Poppins', sans-serif;
   color: #000064;
   line-height: 107%;
   letter-spacing: 1.5%;
   font-weight: 600;
   text-align: start;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 .resumeSolucoes {
-  font-size: 22px;
+  font-size: 19px;
   font-family: 'Roboto', monospace;
   color: #000000;
   line-height: 127%;
@@ -65,40 +65,87 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-bottom: 1.2rem;
-  width: 100%;
+  width: 90%;
+  margin-top: 2rem;
 }
-@media (max-width: 1000px) {
-  .titleDelorianSolucoes{ 
-    margin-top: 40px;
-    padding-top: 20px;
+
+
+
+
+@media (max-width: 1400px){
+  .problemSolutionContainer{
+    padding-bottom: 0rem;
+   }
+   .delorianResolve{
+    font-size: 2.3rem;
   }
-  .delorianResolve{
-    font-size: 2.8rem;
+  .raioAzul{
+    height: 4.2rem;
   }
-  .raioAzul {
-    height: 5.35rem;
+}
+
+/* @media (max-width: 1300px){
+  .problemSolutionContainer{
+    gap: 1.5rem 1rem;
   }
+ .solucoes{
+  padding: 2rem;
+ }
+  .titleSolucoes {
+    font-size: 22px; 
+  }
+  .resumeSolucoes {
+    font-size: 19px;
+  }
+} */
+@media (max-width: 1200px) {
   .problemSolutionContainer{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
   }
-  .titleSolucoes {
-    font-size: 22px;
+  .solucoes{
+    padding: 2rem 1.5rem;
+   }
+   .titleSolucoes {
+    font-size: 19px;
+    flex-wrap: nowrap;
   }
   .resumeSolucoes {
     font-size: 18px;
   }
   .imageContainer{
     width: 250px;
+    }
+}
+@media (max-width: 1045px) {
+  .problemSolutionContainer{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 1000px) {
+  .problemSolutionContainer{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-bottom: 4rem;
+  }
+  .imageContainer{
     margin: 0 auto;
-  }
-  .solucoes{
-    gap: 1rem;
-    padding: 2.5rem;
-    max-width: 380px;
-    height: auto;
-  }
+    }
+    .titleDelorianSolucoes{ 
+      margin-top: 35px;
+      padding-top: 18px;
+      gap: 0.5rem;
+    }
+    .delorianResolve{
+      font-size: 2.2rem;
+    }
+    .raioAzul {
+      height: 4.2rem;
+    }
+    .solucoes{
+      padding: 3rem;
+      gap: 1rem;
+      height: 400px;
+     }
 }
  @media (max-width: 600px) {
   .titleDelorianSolucoes{ 
@@ -170,6 +217,7 @@
   }
   .titleSolucoes {
     font-size: 11px;
+    margin: 0.2rem;
   }
   .resumeSolucoes {
     font-size: 9px;
@@ -177,12 +225,13 @@
   }
   .solucoes{
     gap: 0.5rem;
-    padding: 1.2rem;
+    padding: 0.5rem 1rem;
     width: 200px;
     height: 170px;
   }
   .imageContainer{
+    height: auto;
     width: 100px;
-    margin-top: 2rem;   
+    margin: 0;  
   } 
 }

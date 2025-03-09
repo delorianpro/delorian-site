@@ -1,7 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import styles from "./BannerSection.module.css"
+// import styles from "./BannerSection.module.css";
+import styles from "./BannerSection.module.css";
 
 export function BannerSection() {
   const phoneNumber = '+5541985011909'; 
@@ -19,10 +20,10 @@ export function BannerSection() {
         </div> 
         <div className={styles.bannerImages}>
           <Image 
-            src="/assets/mascote.png"
+            src="/assets/mascote1.png"
             alt={"raposa preta com a camisa da delorian"}
-            width={2379} 
-            height={2984} 
+            width={272} 
+            height={341} 
             priority={true}
             className={styles.mascote}
             />

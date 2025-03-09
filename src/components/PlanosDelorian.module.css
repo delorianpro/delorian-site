@@ -1,0 +1,881 @@
+.plansBg {
+  z-index: 999;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3rem;
+  background: #c5c5c5;
+  /* background: radial-gradient(circle, rgba(26,29,42,1) 0%, rgba(40,43,59,1) 53%, rgba(25,25,33,1) 99%, rgba(45,47,60,1) 100%); */
+  position: relative;
+  overflow: hidden;
+}
+/* Efeito de escovado (linhas verticais) */
+.plansBg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+      90deg,  /* Direção vertical */
+      rgba(255, 255, 255, 0.051) 0px,
+      rgba(255, 255, 255, 0.02) 8px,
+      transparent 2px,
+      transparent 4px
+  );
+  opacity: 0.3;
+  pointer-events: none;
+}
+/* Efeito de reflexo para dar realismo */
+/* .plansBg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0%, transparent 50%, rgba(255, 255, 255, 0.07) 100%);
+  mix-blend-mode: overlay;
+  opacity: 0.;
+} */
+
+
+.plansSectionContainer{
+  display: flex;
+  flex-direction: column;
+  max-width: 1364px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.titlePlansSection{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 40px;
+}
+.titleH1PlansSection{
+  font-family: 'Poppins', monospace;
+  font-size: 2.2rem;
+  color: rgb(0, 0, 0);
+}
+.raioAzul{
+  height: 4.5rem;
+}
+.plansContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.6fr;
+  gap: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+.planBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  position: relative;
+  padding: 20px;
+  padding-bottom: 1.8rem;
+}
+.blockPriceGlobal{
+  display: flex;
+  flex-direction: column;
+  width: 9.2rem;
+  height: 9.2rem;
+  align-self: flex-end;
+  color: #FFFFFF;
+  padding: 1.2rem;
+  text-align: center;
+  gap: 5px;
+  border-radius: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 55rem;
+  left: 8rem;
+}
+
+/* a partir de fonte size */
+.aPartir{
+  font-size: 10px;
+}
+.blockValue{
+  display: flex;
+  align-items: center;
+}
+.valorGlobal{
+  font-size: 38px;
+  font-weight: 900;
+}
+.mesGlobal, .formPagamentoGlobal{
+  font-size: 8px;
+}
+.blockTitleAndServices{
+  margin-top: 6rem;
+}
+.titlePlan{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+/* fonte size dos serviços fornecidos */
+.blockServices{
+  margin: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;  
+  position: relative;
+}
+.itemList, .itemList1{
+  margin-bottom: 2.5rem;
+  position: relative;
+  max-width: 170px;
+}
+.parenteses{
+  font-size: 13px; 
+}
+.serviceCheckAndText{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 2px;
+  margin-left: -1rem;
+}
+
+.blockServices div::after{
+  content: "";
+  display: flex;
+  width: 80%;
+  height: 1px;
+  background-color: #ffffff22;
+  position: absolute;
+  margin-top: -1rem;
+  margin-left: 1.2rem;
+}
+.blockServices div:first-child::after {
+  display: none;
+}
+.btnGlobal{
+  width: 100%;
+  font-size: 14px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 1.2rem;
+  align-self: center; 
+
+  /* &:hover{
+    cursor: pointer;
+    background: #010432;
+  } */
+}
+.vinteQuatroHoras{
+  position: absolute;
+}
+.vinteQuatroHoras::after{
+  content: "*";
+  width: 1px;
+  height: 1px;
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilização bronze */
+.titlePlanBronze{
+  color: #ffffff;
+}
+.planBronze{
+  background: linear-gradient(90deg,
+  #57271d 0%,   /* Bronze escuro */
+  #8c4b39 25%,  /* Bronze médio */
+  #c2715f 50%,  /* Bronze claro */
+  #e08569 75%,  /* Reflexo dourado */
+  #8c4739 100% ) border-box;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
+  border: 4px solid transparent; /* Define uma borda transparente */
+  /* border-image: linear-gradient(90deg, #c38780, #9f4f4b, #2a0f0e, #6a1e1b) 1px; */
+  /* filter: brightness(1.1); */
+}
+.blockServiceBronze{
+  color: #fcf0ec;
+}
+.blockPriceBronze{
+  background: linear-gradient(90deg,
+  #5c2a1f 0%,   /* Bronze escuro */
+  #8c4b39 25%,  /* Bronze médio */
+  #c2715f 50%,  /* Bronze claro */
+  #e08569 75%,  /* Reflexo dourado */
+  #8c4739 100% ) border-box;
+  box-shadow: inset 0 0 7.5px rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+  /* border: 2px solid #e8b7a5; */
+}
+.valorBronze, .centavosBronze, .realSymbolBronze{
+  color: #ffffff;
+}
+.centavosGlobal, .realSymbolGlobal{
+  font-size: 12px;
+  font-weight: 600;
+}
+.mesBronze, .formPagamentoBronze{
+  font-size: 10.5px;
+  color: #edeceb;
+}
+.destaqueTextBronze{
+  color: #ffffff; 
+  font-weight: bold;
+}
+.btnBronze{
+  background: linear-gradient(90deg, #3e1f1d, #6b3431, #2a0f0e, #6a1e1b);
+  border: 2px solid #6b3431;
+  color: #ffffff;
+  &:hover{
+    filter: brightness(4);
+    cursor: pointer;
+    border-color: #692826;
+    color: #000000;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilização prata */
+.titlePlanPrata{
+  color: #100e0e;
+}
+.planPrata{
+  background: linear-gradient(
+    90deg, #525252, #8f8f8f, #d3d3d3, #e0dfdf, #d3d3d3,#8f8f8f, #3e3e3e
+  ) border-box;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
+  border: 4px solid transparent;
+  filter: brightness(1.1);
+  
+  /* border: 4px solid #e5e5e5d4; */
+}
+.blockPricePrata{
+  background: linear-gradient(
+    90deg, #525252, #8f8f8f, #d3d3d3,#e0dfdf,  #d3d3d3,  #8f8f8f,  #3e3e3e   
+  ) border-box;
+  box-shadow: inset 0 0 7.5px rgba(0, 0, 0, 0.6);
+  border: 2px solid transparent;
+
+
+  /* border: 2px solid #F3F3F4; */
+}
+.blockServicePrata{
+  color: #222222;
+}
+.mesPrata, .formPagamentoPrata{
+  font-size: 10.5px;
+  color: #282828;
+}
+.aPartirPrata{
+  color: #282828;
+}
+.destaqueTextPrata{
+  color: #000000;
+  font-weight: bolder;
+}
+.btnPrata{
+  background: linear-gradient(90deg, #323232, #636363, #818181, #a3a3a3, #b4b4b4, #323232);
+
+  border: 2px solid #28202050;
+  color: #000000;
+  &:hover{
+    filter: brightness(2);
+    cursor: pointer;
+    border-color: #4d4d4d;
+    color: #000000;
+  }
+}
+.valorPrata, .centavosPrata, .realSymbolPrata{
+  color: #000000;
+  font-weight: 900;
+}
+/* .blockValuePrata{
+  margin-left: -3px;
+} */
+
+
+/* estilização ouro */
+.titlePlanOuro{
+  color: #191300;
+}
+.planOuro{
+  background: linear-gradient(90deg, #554400, #b38b00, #e6c401, #ffcc00, #b38b00, #554400);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
+  border: 4px solid transparent;
+  filter: brightness(1.1);
+
+  /* border: 4px solid #F9E26A;
+  color: black; */
+  
+}
+
+.parentesesOuro{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.807);
+}
+.corPadrao{
+  color: rgba(0, 0, 0, 0.798);
+  font-weight: 500;
+}
+.blockPriceOuro{
+  background: linear-gradient(90deg, #a68501, #cb9f02, #e6c401, #f5c401, #c79c02, #876c00) border-box;
+  box-shadow: inset 0 0 7.5px rgba(0, 0, 0, 0.6);
+
+  border: 2px solid transparent;
+  
+  color: black;
+
+  /* border: 2px solid #F9E26A; */
+}
+.destaqueTextOuro{
+  color: #000000;
+}
+.valorOuro {
+  font-size: 32px;
+}
+.mesOuro, .formPagamentoOuro{
+  color: #000000d2;
+}
+.valorOuro, .centavosOuro, .realSymbolOuro{
+  color: #000000;
+}
+.blockValueOuro{
+  margin-left: -0.2rem;
+}
+.btnOuro{
+  color: black;
+  background: linear-gradient(90deg, #a67203, #eaae08, #eaae08, #fac30f, #f5c834, #fcc920, #a67b03);
+
+  border: 2px solid #d1970350;
+  color: #000000;
+  &:hover{
+    filter: brightness(1.5);
+    cursor: pointer;
+    border-color: #d1970350;
+  }
+
+  /* background: #ea9708; */
+}
+.centavosOuro, .mesOuro, .formPagamentoOuro{
+  font-size: 11px;
+}
+.blockValueOuro{
+  margin-left: -6px;
+}
+
+
+
+
+
+/* estilização Diamante */
+.titlePlanDiamante{
+  color: #FFFFFF;
+}
+.planDiamante{
+  background-color: #010203;
+  box-shadow: inset 0 0 15px rgba(35, 78, 165, 0.6);
+  border: 4px solid rgba(35, 78, 165, 0.446);
+  filter: brightness(2);
+ 
+ 
+  /* border: 4px solid rgb(35, 78, 165);
+  position: relative; */
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.planDiamante::after{
+  content: "*Emergências.";
+  width: 2px;
+  height: 2px;
+  font-size: 8px;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: 600; 
+  top: 15rem;
+  left: 0.6rem;
+  transform: rotate(270deg);
+  transform-origin: left bottom;
+}
+.blockPriceDiamante{
+  background: linear-gradient(90deg,  #75757e, #7b7979, #5a5959);
+  box-shadow: inset 0 0 7.5px rgba(0, 0, 0, 0.6);
+  border: 2px solid #ffffff;
+  left: 17.8rem;
+}
+.blockServiceDiamante{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.374);
+  gap: 0 1.2rem;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.blockServiceDiamante div::after{
+  content: "";
+  display: block;
+  width: 32%;
+  height: 1px;
+  background-color: #ffffff22;
+  position: absolute;
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+ .blockServiceDiamante div:nth-child(1)::after {
+  display: none;
+}
+.blockServiceDiamante div:nth-child(2)::after {
+  display: none;
+}
+
+
+.btnDiamante{
+  background: linear-gradient(90deg, #c0c0c0, #ffffff, #bfe1e6, #e6e6fa, #ffffff, #c0c0c0);
+  font-weight: 900;
+  color: black;
+  border: 2px solid rgba(35, 78, 165, 0.8);
+  &:hover{
+  border: 2px solid #1a1a1a;
+  cursor: pointer;
+  background: linear-gradient(90deg, #000000, #1a1a1a, #404040, #737373, #404040, #1a1a1a, #000000);
+
+  color: rgb(0, 0, 0);
+  }
+}
+
+.aPartirDiamante, .mesDiamante, .formPagamentoDiamante{
+  color: rgba(0, 0, 0, 0.903);
+}
+.valorDiamante, .centavosDiamante, .realSymbolDiamante{
+  color: black;
+}
+.valorDiamante{
+  font-size: 30px;
+}
+.centavosDiamante{
+  font-size: 10px;
+}
+.parentesesDiamante{
+  font-size: 12px;
+}
+.mesDiamante, .formPagamentoDiamante{
+  font-size: 10.5px;
+}
+.destaqueTextDiamante{
+  color: #FFFFFF;
+}
+/* .blockValueDiamante{
+  margin-left: -4px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1300px){
+  .blockPriceGlobal{
+    left: 7rem;
+    bottom: 56rem;
+  }
+  .blockPriceDiamante{
+    left: 16.5rem;
+  }
+} 
+@media (max-width: 1250px){
+  .plansContainer{
+    margin-top: 2rem;
+  }
+  .blockPriceGlobal{
+    left: 6rem;
+    bottom: 56.5rem;
+  }
+  .blockPriceDiamante{
+    left: 15rem;
+  }
+} 
+@media (max-width: 1170px){
+  .blockPriceGlobal{
+    left: 5.5rem;
+    bottom: 57rem;
+  }
+  .blockPriceDiamante{
+    left: 13.5rem;
+  }
+}
+@media (max-width: 1122px){
+  .plansContainer{
+    gap: 1rem;
+  }
+  .blockPriceGlobal{
+    left: 5rem;
+    bottom: 58rem;
+  }
+  .blockPriceDiamante{
+    left: 13rem;
+  }
+}
+@media (max-width: 1100px){
+  .plansBg{
+    padding-bottom: 2.8rem;
+  }
+  .plansContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    gap: 4rem 2.5rem;
+  }
+  .titlePlan{
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+  }
+
+  .blockPriceGlobal{
+    bottom: 24rem;
+    left: 22.8rem;
+  }
+  .blockPriceOuro,  .blockPriceDiamante{
+    left: 22.8rem;
+    bottom: 51rem;
+  }
+  .planDiamante::after{
+    top: 11.8rem;
+  }
+  .blockServices div::after{
+    margin-left: 2.5rem;
+  }
+}
+
+@media (max-width: 1080px){
+  .planBlock{
+    max-width: 450px;
+  }
+  .blockPriceGlobal{
+    bottom: 23rem;
+    left: 20rem;
+  }
+  .blockPriceOuro,  .blockPriceDiamante{
+    left: 20rem;
+    bottom: 47rem;
+  }
+  .itemList{
+    max-width: 100%;
+  }
+  .itemListDiamante{
+    max-width: 130px;
+  }
+}
+@media (max-width: 990px){
+  .titleH1PlansSection{
+    font-size: 30px;
+  }
+  .blockPriceGlobal{
+    left: 19.8rem;
+  }
+  .blockPriceOuro,  .blockPriceDiamante{
+    left: 19.8rem;
+  }
+  .itemList{
+    max-width: 100%;
+  }
+  .itemListDiamante{
+    max-width: 125px;
+  }
+}
+@media (max-width: 970px){
+  .planBlock{
+    max-width: 400px;
+  }
+  .blockPriceGlobal{
+    left: 16.5rem;
+  }
+  .blockPriceOuro,  .blockPriceDiamante{
+    left: 16.5rem;
+    bottom: 50.2rem;
+  }
+}
+
+
+@media (max-width: 900px){
+  .planBlock{
+    max-width: 100%;
+    width: 500px;
+    height: 400px;
+  }
+  .planBronze, .planPrata, .planOuro, .planDiamante{
+    height: auto;
+  }
+  .planOuro{
+    height: 800px;
+  }
+  .planDiamante{
+    height: 800px;
+  }
+  .blockServiceDiamante{
+    gap: 0;
+  }
+  .plansContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+    justify-items: center;
+    gap: 2.2rem;
+    margin: 0 auto;
+  }
+  .titleH1PlansSection{
+    font-size: 25px;
+  }
+  .raioAzul{
+    height: 60px;
+  }
+  .blockPriceGlobal{
+    left: 22.5rem;
+    bottom: 18.5rem;
+  }
+  .blockPriceOuro,  .blockPriceDiamante{
+    left: 22.5rem;
+    bottom: 42rem;
+    }
+    .planDiamante::after{
+      top: 9.4rem;
+    }
+  .titlePlan{
+      margin-top: -5.4rem;
+      margin-bottom: 2rem;
+  }
+  .itemList, .itemList1{
+    margin-bottom: 10px;
+    padding-bottom: 1rem;
+  }
+  .blockServices div::after{
+    margin-left: 4rem;
+    margin-bottom: 8px;
+    width: 65%;
+  }
+  .itemListOuro{
+    padding-bottom: 26px;
+  }
+}
+@media (max-width: 729px){
+  .titlePlansSection{
+    align-items: flex-start;
+  }
+  .raioAzul{
+    height: 3.5rem;
+    margin-top: -0.45rem;
+  }
+}
+@media (max-width: 550px){
+  .planBlock {
+    width: 355px;
+  }
+  .plansSectionContainer{
+    padding: 2rem 1rem;
+    margin: 0 auto;
+  }
+  .titleH1PlansSection{
+    font-size: 20px;
+   }
+   .titlePlansSection{
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .raioAzul{
+    margin-top: -10px;
+   }
+   .checkIcon{
+    height: 14px;
+   }
+   .checkIconDiamante{
+    margin-top: 3px;
+    margin-left: 4px;
+   }
+   .blockServiceDiamante{
+    padding-top: 1rem;
+   }
+  .blockPriceGlobal, .blockPriceDiamante{
+    left: 13.6rem;
+    bottom: 18.5rem;
+    height: 9rem;
+    width: 9rem;
+  }
+  .blockPriceOuro {
+    bottom: 42.1rem;
+  }
+  .blockPriceDiamante{
+    bottom: 41.7rem;
+  }
+  .blockServices div::after{
+    margin-left: 2rem;
+  }
+  .blockValueOuro{
+    margin-left: -12px;
+  }
+  .blockValueDiamante{
+    margin-left: -8px;
+  }
+  .planOuro, .planBronze, .planPrata{
+    height: auto;
+  }
+  .planDiamante{
+    padding: 2rem 1rem;
+    height: auto;
+  }
+  .btnDiamante{
+    margin-top: 1.6rem;
+  }
+  .itemListOuro, .itemListDiamante{
+    margin-bottom: 5px;
+  }
+  .titlePlan{
+    margin-left: -2rem;
+  }
+  .titlePlanDiamante{
+    margin-left: -2.8rem;
+  }
+  .itemListDiamante{
+    max-width: 13ch;
+  }
+  .planDiamante::after{
+    top: 11.2rem;
+  }
+  .checkIconBronze, .checkIconPrata, .checkIconOuro{
+    margin-left: 0.85rem;
+    margin-top: 2px;
+  }
+}
+@media (max-width: 500px){
+  .titleH1PlansSection{
+    font-size: 18px;
+   }
+   .titlePlansSection{
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .raioAzul{
+    margin-top: -7px;
+    height: 42px;
+   }
+}
+@media (max-width: 400px){
+  .titleH1PlansSection{
+    font-size: 19px;
+   }
+   .titlePlansSection{
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .titlePlanDiamante{
+    margin-left: -2.4rem;
+  }
+}
+
+
+@media (max-width: 380px){
+  .planBlock{
+    width: 250px;
+    height: auto;
+  }
+  .blockPriceGlobal, .blockPriceDiamante{
+    height: 8rem;
+    width: 8rem;
+    left: 9rem;
+    bottom: 17.8rem;
+  }
+  .valorBronze, .valorDiamante, .valorOuro, .valorPrata{
+    font-size: 1.7rem;
+  }
+  .blockPriceDiamante{
+    bottom: 41rem;
+  }
+  .blockPriceOuro{
+    bottom: 38.5rem;
+  }
+  .titlePlan{
+    font-size: 1.4rem;
+  }
+  .checkIconBronze, .checkIconPrata, .checkIconOuro{
+    margin-left: 0.2rem;
+  }
+ .itemListDiamante{
+  font-size: 0.8rem;
+ }
+ .itemList, .itemList1{
+  font-size: 0.8rem;
+ }
+}
+@media (max-width: 300px){
+  .plansBg{
+    padding-bottom: 1rem;
+  }
+  .planBlock{
+    width: 240px;
+  }
+  .titlePlan, .titlePlanBronze, .titlePlanOuro{
+    margin-left: -3.5rem;
+  }
+  .titlePlanDiamante{
+    margin-left: -3.5rem;
+    font-size: 1rem;
+  }
+
+  .blockPriceGlobal{
+    left: 7rem;
+    bottom: 18rem;
+  }
+  .blockPriceDiamante{
+    bottom: 42rem;
+    left: 7rem;
+  }
+  .blockPriceOuro{
+    left: 7rem;
+    bottom: 38.5rem;
+  }
+  .blockServiceBronze, .blockServicePrata, .blockServiceOuro{
+    margin-left: -0.5rem;
+  }
+  .checkIconBronze, .checkIconPrata, .checkIconOuro{
+    margin-left: 0.5rem;
+  }
+}

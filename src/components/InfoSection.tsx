@@ -11,15 +11,12 @@ export function InfoSection() {
     const whatsappLink = `https://wa.me/${phoneNumber}?text=Olá!%20Tudo%20bem?%20Gostaria%20de%20mais%20informações.`;
     window.open(whatsappLink, '_blank');
   };
-  
   const handleRedirectInstagram = () => {
     window.open("https://www.instagram.com/delorianpro/", "_blank");
   };
-  
   const handleRedirectFacebook = () => {
     window.open("https://www.facebook.com/delorianpro", "_blank");
   };
-
   return (
     <section className={styles.infoContainer}>
       <Link href="#voltarInicio" passHref>

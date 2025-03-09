@@ -17,10 +17,10 @@ export default function Header() {
         <main className={styles.main}>   
           <Link href="/">
             <Image 
-              src="/assets/logoDelorian.png" 
+              src="/assets/logoDelorian1.png" 
               alt={"Logo Delorian que é o próprio nome da empresa com letra estilizada"} 
-              width={1000} 
-              height={2926} 
+              width={270} 
+              height={54} 
               priority={true}
               className={styles.logo}
               />
@@ -28,7 +28,7 @@ export default function Header() {
           <nav className={styles.nav}>
             <Link href="/" className={styles['nav-inicio']}>Início</Link>
             <Link href="/#delorianResolveId" className={styles['nav-delorianResolve']}>Delorian resolve</Link>
-            <button className={styles.button} onClick={handleClickTalkWithUs}  >Fale conosco</button>
+            <button className={styles.button} onClick={handleClickTalkWithUs}>Fale conosco</button>
           </nav>
         </main>  
       </header>

@@ -35,7 +35,7 @@
 }
 .blocoMarcas{
   height: auto;
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -46,6 +46,10 @@
   padding-top: 5rem;
   margin-bottom: 10rem;
 }
+.peccininLogo, .garenLogo, .niceLogo, .rossiLogo,  .niceLogo, .rossiLogo, .ppaLogo{
+  height: auto;
+  width: 180PX;
+} 
 .peccininLogo, .garenLogo {
   justify-self: flex-start;
 }
@@ -62,6 +66,7 @@
   .title{
     font-size: 50px;
   }
+
 }
 @media (max-width: 1200px){
   .titleContainer{
@@ -76,11 +81,11 @@
 }
 @media (max-width: 1000px){
   .title{
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .blocoMarcas{
     padding-top: 3.5rem;
-    width: 60%;
+    width: 70%;
   }
 } 
 @media (max-width: 800px){
@@ -89,7 +94,7 @@
   }
   .titleContainer{
     padding-top: 5rem;
-    max-width: 80%;
+    max-width: 85%;
   }
   .title{
     font-size: 30px;
@@ -97,7 +102,7 @@
   .blocoMarcas{
     padding-top: 3rem;
     gap: 2rem;
-    width: 65%;
+    width: 75%;
   }
 } 
 @media (max-width: 600px){
@@ -111,5 +116,5 @@
     padding-top: 2.5rem;
     gap: 1rem;
     width: 80%;
-  }
+    }
 } 

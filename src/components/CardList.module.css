@@ -1,7 +1,7 @@
 .cardListContainer{
-  max-width: 1605px;
+  max-width: 1364px;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 2rem;
   margin-bottom: 110px;
 }
 .titleContainer{
@@ -12,15 +12,15 @@
   padding-top: 40px;
 }
 .title{
-  font-size: 3rem;
-    font-weight: 800;
-    line-height: auto;
-    letter-spacing: 5%;
-    color: #010549;
-    font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 5%;
+  color: #010549;
+  font-family: 'Poppins', sans-serif;
 }
 .raioAzul{
-  height: 5.5rem;
+  height: 5rem;
     width: auto;
 }
 .wrapper, .wrapper2  {
@@ -119,6 +119,14 @@ animation-delay: calc(30s / 7 * (8 - 5) * -1);
   .item14 {
   animation-delay: calc(30s / 7 * (8 - 7) * -1);
   }
+  @media (max-width: 1400px){
+    .title{
+      font-size: 2.3rem;
+    }
+    .raioAzul{
+      height: 4.8rem;
+    }
+}
 @media (max-width: 600px){
 .titleContainer{
   gap: 0.5rem;
@@ -131,7 +139,7 @@ animation-delay: calc(30s / 7 * (8 - 5) * -1);
 }
 .raioAzul{
   height: 3rem;
-    width: auto;
+  width: auto;
 }
 }
 @media (max-width: 1400px) {
@@ -163,13 +171,12 @@ animation-delay: calc(30s / 7 * (8 - 5) * -1);
   width: 100px;
   padding: 0.2rem;
 } }
-
 @media (max-width: 600px){
  .cardListContainer{
   margin-bottom: 20px;
   padding-left: 3rem;
   padding-right: 3rem;
- }
+}
   .wrapper {
  height: 80px;
  margin-bottom: 1rem;
@@ -192,7 +199,7 @@ width: 120px;
     padding-right: 2rem;
     margin-bottom: 0;
   }
-.wrapper2 {
+  .wrapper2 {
   height: 80px;
 }
  .item{
@@ -200,43 +207,9 @@ width: 120px;
    width: 90px;
    margin-bottom: 0;
    padding: 1rem;
- }
+}
  .itemW2{
   right: max(calc(200px * 2), 100%);
   width: 90px;
   padding: 1rem;
  }}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

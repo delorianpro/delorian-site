@@ -24,13 +24,13 @@ const solucoes = [
   },
   {
     id: 4,
-    title: "Motor indo só para um lado",
+    title:"Motor indo só para um lado",
     description: "Ajustes para motores que só se movem para um lado.",
     images: [{ src: "/assets/unidirecional.svg", alt: "Instalação de motor", width: 360, height: 162 }]
   },
   {
     id: 5,
-    title: "Motor barulhento",
+    title:"Motor barulhento",
     description: "Soluções para motores barulhentos com ruídos de atrito, rangidos ou estalos.",
     images: [{ src: "/assets/barulhento.svg", alt: "Instalação de motor", width: 360, height: 162 }]
   },
@@ -38,7 +38,7 @@ const solucoes = [
     id: 6,
     title: "Portão batendo",
     description: "Soluções para portões que batem ao fechar, causando impactos excessivos e ruídos.",
-    images: [{ src: "/assets/batendo.svg", alt: "Instalação de motor", width: 294, height: 169 }]
+    images: [{ src: "/assets/batendo.svg", alt: "Instalação de motor", width: 360, height: 161 }]
   },
   {
     id: 7,

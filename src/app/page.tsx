@@ -8,6 +8,7 @@ import Header from "@/components/Header"
 import { InfoSection } from "@/components/InfoSection";
 import { MarcasParceiras } from "@/components/MarcasParceiras";
 import { Orcamento } from "@/components/Orcamento";
+import { PlanosDelorian } from "@/components/PlanosDelorian";
 import { SolucoesDelorian } from "@/components/SolucoesDelorian";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <main>
       <Header />
       <BannerSection />
+      <PlanosDelorian />
       <SolucoesDelorian />
       <ChamaDelorian />
       <CuritibaRegiao />
